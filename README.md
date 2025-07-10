@@ -10,3 +10,4 @@ npm install react-scripts --save --legacy-peer-deps   frontend chalana ka liya p
 when you want to run backend 
 1.npm install 
 2.npm start;   jo backend hain vo port no 1000 pa haina bhi ka liya
+my name is yash agarwal
