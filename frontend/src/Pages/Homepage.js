@@ -9,12 +9,12 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom"; // ✅ Correct for React Router v5
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
 
 function Homepage() {
-  const history = useHistory();
+  const history = useHistory(); // ✅ This will now work
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
@@ -25,7 +25,7 @@ function Homepage() {
   return (
     <Container maxW="xl" centerContent>
       <Box
-        d="flex"
+        display="flex"
         justifyContent="center"
         p={3}
         bg="white"
