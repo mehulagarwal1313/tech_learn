@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    /* fallback */
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.login-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.role-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.role-toggle button {
+    padding: 10px 20px;
+    border: 2px solid #3b82f6;
+    background: transparent;
+    color: #3b82f6;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.role-toggle .active {
+    background: #3b82f6;
+    color: white;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+.login-form input {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-form input::placeholder {
+    color: #ddd;
+}
+
+.login-form input:focus {
+    border: 1px solid #3b82f6;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-password {
+    font-size: 13px;
+    color: #60a5fa;
+    cursor: pointer;
+    margin-top: -10px;
+    text-align: right;
+}
+
+.login-btn {
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #2563eb;
+}
+
+.google-divider {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    color: #bbb;
+    position: relative;
+}
+
+.google-divider::before,
+.google-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #888;
+}
+
+.google-divider::before {
+    left: 0;
+}
+
+.google-divider::after {
+    right: 0;
+}
+
+.google-btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: background 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.google-btn img {
+    height: 20px;
+    width: 20px;
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #eee;
+}
+
+.login-footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

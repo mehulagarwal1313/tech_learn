@@ -25,6 +25,7 @@ import Chatpage from "./Pages/Chatpage";
 
 import LandingPage from "./Pages/LandingPage";
 import RegisterPage from "./Pages/RegisterPage"; // ✅ Import it
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/chats" component={Chatpage} />
           <Route path="/register" component={RegisterPage} /> 
           <Route path="/" component={LandingPage} exact />
+          <Route path="/login" component={LoginPage} /> {/* Reusing RegisterPage for login */}
         </Switch>
       </div>
     </BrowserRouter>
