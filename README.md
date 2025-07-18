@@ -27,5 +27,3 @@ aur agar usme bhi apko main wala change karna hain toh
 git pull.
 
 git fetch
-hey
-hey
