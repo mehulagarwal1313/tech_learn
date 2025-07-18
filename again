@@ -1,0 +1,7 @@
+ever(pilotVm.selectedType, (value) {
+  if (value != "Working") {
+    pilotVm.bindTypeReset();
+  } else {
+    pilotVm.bindTypeDetails(context);
+  }
+});
