@@ -26,7 +26,6 @@ git switch dummyname(apki dummy ka name)
 aur agar usme bhi apko main wala change karna hain toh 
 git pull.
 
-git fetch hj
-hey
+git fetch
 hey
 hey
